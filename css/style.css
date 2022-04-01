@@ -11,8 +11,14 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    background-color: black;
 }
-
+.titulo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    color: blueviolet;
+}
 .container{
     display: flex;
     width: 90vw;
@@ -22,13 +28,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    border-radius: 501px;
+    border-radius: 35px;
     color: #fff;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: flex 0.7s ease-in;
+    transition: flex 0.3s ease-in;
+    border: 2px solid blueviolet;
 }
 .painel h3{
     font-size: 24px;
@@ -43,6 +50,7 @@ body{
 }
 .painel.active h3{
     opacity: 1;
+    transition: opacity 0.2s ease-in 0.3s;
 }
 @media(max-width: 480px){
     .container{
